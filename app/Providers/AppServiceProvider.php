@@ -22,6 +22,16 @@ class AppServiceProvider extends ServiceProvider
             Interfaces\PostResponseInterface::class,
             Services\PostResponse::class,
         );
+
+        $this->app->bind(
+            Interfaces\UserStoreInterface::class,
+            Services\UserStore::class,
+        );
+
+        $this->app->bind(
+            Interfaces\UserResponseInterface::class,
+            Services\UserResponse::class,
+        );
     }
 
     /**

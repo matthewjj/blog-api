@@ -6,5 +6,5 @@ use App\RequestMappers\PostRequestMapper;
 
 interface PostStoreInterface
 {
-	public function save(PostRequestMapper $post);
+	public function save(PostRequestMapper $map);
 }

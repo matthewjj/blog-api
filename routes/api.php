@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('/users', Controllers\UserController::class);
+
 Route::middleware(['auth:sanctum'])->group( function() {
 	Route::resource('/posts', Controllers\PostController::class);
 });
